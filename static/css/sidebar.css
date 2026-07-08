@@ -5,16 +5,17 @@
 }
 
 section[data-testid="stSidebar"]>div {
-    padding-top: 1.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1.5rem 1rem 1.25rem;
 }
 
 .sidebar-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 1rem;
+    font-size: 8rem;
 }
 
 .sidebar-logo img {
@@ -24,17 +25,16 @@ section[data-testid="stSidebar"]>div {
 
 .sidebar-title {
     text-align: center;
-    font-size: 1.55rem;
+    font-size: 2.5rem;
     font-weight: 800;
     color: white;
-    margin-top: .5rem;
+    margin: .5rem 0 .25rem;
 }
 
 .sidebar-subtitle {
     text-align: center;
     color: rgba(255, 255, 255, .72);
-    font-size: .9rem;
-    margin-bottom: 2rem;
+    font-size: 1.25rem;
 }
 
 section[data-testid="stSidebar"] hr {
@@ -45,17 +45,13 @@ section[data-testid="stSidebar"] hr {
 }
 
 div[role="radiogroup"] label {
-    background: transparent;
-    border-radius: 14px;
-    padding: .85rem 1rem;
-    margin-bottom: .45rem;
     transition: all .25s ease;
 }
 
 div[role="radiogroup"] label p {
-    color: rgba(255, 255, 255, .88);
+    color: rgba(212, 202, 202, 0.88);
     font-size: .96rem;
-    font-weight: 600;
+    font-weight: 450;
 }
 
 div[role="radiogroup"] label:hover {
@@ -71,12 +67,15 @@ div[role="radiogroup"] input {
     accent-color: var(--primary);
 }
 
-.sidebar-footer {
-    margin-top: 3rem;
+section[data-testid="stSidebar"] .sidebar-footer {
     text-align: center;
-    color: rgba(255, 255, 255, .65);
-    font-size: .82rem;
-    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.882);
+    font-size: .85rem;
+    /* line-height: 1.75; */
+}
+
+section[data-testid="stSidebar"] .sidebar-footer strong {
+    color: rgb(255, 255, 255);
 }
 
 .sidebar-version {
