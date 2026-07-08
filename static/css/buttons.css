@@ -1,0 +1,188 @@
+﻿/* BUTTONS */
+
+/* BASE BUTTON */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    padding: .85rem 1.6rem;
+    border: none;
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    font-size: .95rem;
+    font-weight: var(--fw-semibold);
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    user-select: none;
+}
+
+/* PRIMARY BUTTON */
+.btn-primary {
+    background: var(--hero-gradient);
+    color: var(--text-white);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* SECONDARY BUTTON */
+.btn-secondary {
+    background: var(--secondary);
+    color: white;
+}
+
+.btn-secondary:hover {
+    transform: translateY(-3px);
+    opacity: .95;
+}
+
+/* OUTLINE BUTTON */
+.btn-outline {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* GHOST BUTTON */
+.btn-ghost {
+    background: rgba(37, 99, 235, .08);
+    color: var(--primary);
+}
+
+.btn-ghost:hover {
+    background: rgba(37, 99, 235, .15);
+}
+
+/* SUCCESS / DANGER */
+.btn-success {
+    background: var(--success);
+    color: white;
+}
+
+.btn-success:hover {
+    transform: translateY(-3px);
+}
+
+.btn-danger {
+    background: var(--danger);
+    color: white;
+}
+
+.btn-danger:hover {
+    transform: translateY(-3px);
+}
+
+/* ICON BUTTON */
+.icon-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.icon-btn:hover {
+    background: var(--primary);
+    transform: rotate(8deg) scale(1.08);
+}
+
+.icon-btn:hover svg {
+    stroke: white;
+}
+
+/* BUTTON ICON */
+.btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* SIZES */
+.btn-sm {
+    padding: .55rem 1rem;
+    font-size: .85rem;
+}
+
+.btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+/* FULL WIDTH */
+.btn-block {
+    width: 100%;
+}
+
+/* STREAMLIT BUTTON */
+div.stButton>button {
+    width: 100%;
+    border-radius: var(--radius-md);
+    background: var(--hero-gradient);
+    color: white;
+    border: none;
+    padding: .75rem 1rem;
+    font-weight: var(--fw-semibold);
+    transition: all var(--transition-normal);
+    box-shadow: var(--shadow-sm);
+}
+
+div.stButton>button:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+    border: none;
+}
+
+div.stDownloadButton>button {
+    width: 100%;
+    border-radius: var(--radius-md);
+    background: white;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    font-weight: var(--fw-semibold);
+    transition: all var(--transition-normal);
+}
+
+div.stDownloadButton>button:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* FILTER CHIP */
+.filter-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: .55rem 1rem;
+    border-radius: var(--radius-pill);
+    background: rgba(37, 99, 235, .08);
+    color: var(--primary);
+    font-size: .85rem;
+    font-weight: var(--fw-medium);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.filter-chip:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* DISABLED */
+.btn:disabled,
+button:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+    transform: none;
+}

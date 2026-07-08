@@ -1,0 +1,82 @@
+/* THEME */
+
+:root {
+
+   /* PRIMARY PALETTE */
+   --primary: #2563EB;
+   --primary-dark: #1D4ED8;
+   --primary-light: #60A5FA;
+
+   /* SECONDARY COLORS */
+   --secondary: #0F172A;
+   --accent: #3B82F6;
+
+   /* STATUS COLORS */
+   --success: #16A34A;
+   --warning: #F59E0B;
+   --danger: #DC2626;
+   --info: #0EA5E9;
+
+   /* BACKGROUNDS */
+   --background: #F6F8FC;
+   --surface: #FFFFFF;
+   --surface-hover: #F9FAFB;
+
+   /* TEXT */
+   --text-primary: #111827;
+   --text-secondary: #4B5563;
+   --text-muted: #9CA3AF;
+   --text-white: #FFFFFF;
+
+   /* BORDER */
+   --border: #E5E7EB;
+
+   /* SHADOWS */
+   --shadow-sm: 0 2px 8px rgba(15, 23, 42, .05);
+   --shadow-md: 0 8px 25px rgba(15, 23, 42, .08);
+   --shadow-lg: 0 18px 45px rgba(15, 23, 42, .12);
+   --shadow-xl: 0 28px 60px rgba(15, 23, 42, .18);
+
+   /* BORDER RADIUS */
+   --radius-sm: 10px;
+   --radius-md: 18px;
+   --radius-lg: 24px;
+   --radius-xl: 30px;
+   --radius-pill: 999px;
+
+   /* SPACING */
+   --space-xs: .35rem;
+   --space-sm: .75rem;
+   --space-md: 1.25rem;
+   --space-lg: 2rem;
+   --space-xl: 3rem;
+   --space-2xl: 5rem;
+
+   /* TYPOGRAPHY */
+   --font-family: "Inter", sans-serif;
+   --fs-xs: .8rem;
+   --fs-sm: .9rem;
+   --fs-md: 1rem;
+   --fs-lg: 1.2rem;
+   --fs-xl: 1.6rem;
+   --fs-2xl: 2.2rem;
+   --fs-3xl: 3rem;
+
+   /* FONT WEIGHTS */
+   --fw-normal: 400;
+   --fw-medium: 500;
+   --fw-semibold: 600;
+   --fw-bold: 700;
+   --fw-extrabold: 800;
+
+   /* TRANSITIONS */
+   --transition-fast: .2s ease;
+   --transition-normal: .3s ease;
+   --transition-slow: .45s ease;
+
+   /* HERO GRADIENT */
+   --hero-gradient: linear-gradient(135deg,
+         #2563EB,
+         #3B82F6,
+         #60A5FA);
+}

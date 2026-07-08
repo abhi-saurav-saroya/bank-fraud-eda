@@ -1,0 +1,173 @@
+﻿/* TYPOGRAPHY */
+
+/* PAGE TITLE */
+.page-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    letter-spacing: -1px;
+    margin-bottom: .5rem;
+}
+
+/* HERO TITLE */
+.hero-title {
+    font-size: 3.8rem;
+    font-weight: 900;
+    color: var(--text-white);
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+/* HERO SUBTITLE */
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, .92);
+    line-height: 1.8;
+    max-width: 700px;
+    margin-top: 1rem;
+}
+
+/* SECTION TITLE */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1.25rem;
+}
+
+/* SECTION SUBTITLE */
+.section-subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+/* CARD TITLE */
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* CARD DESCRIPTION */
+.card-description {
+    font-size: .96rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-top: .7rem;
+}
+
+/* KPI VALUE */
+.metric-value {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-top: .5rem;
+}
+
+/* KPI LABEL */
+.metric-label {
+    font-size: .95rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* TECHNOLOGY NAME */
+.tech-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: 1rem;
+}
+
+/* INSIGHT TITLE */
+.insight-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* INSIGHT TEXT */
+.insight-text {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-top: .75rem;
+}
+
+/* TABLE TITLES */
+.table-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* CHART TITLE */
+.chart-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+/* BADGE */
+.badge {
+    display: inline-block;
+    padding: .35rem .8rem;
+    background: rgba(37, 99, 235, .1);
+    color: var(--primary);
+    border-radius: 999px;
+    font-size: .82rem;
+    font-weight: 700;
+}
+
+/* SMALL TEXT */
+.small-text {
+    font-size: .85rem;
+    color: var(--text-muted);
+}
+
+/* CAPTION */
+.caption {
+    font-size: .82rem;
+    color: var(--text-muted);
+}
+
+/* MUTED */
+.muted {
+    color: var(--text-muted);
+}
+
+/* SUCCESS */
+.success {
+    color: var(--success);
+    font-weight: 700;
+}
+
+/* WARNING */
+.warning {
+    color: var(--warning);
+    font-weight: 700;
+}
+
+/* DANGER */
+.danger {
+    color: var(--danger);
+    font-weight: 700;
+}
+
+/* INFO */
+.info {
+    color: var(--info);
+    font-weight: 700;
+}
+
+/* GRADIENT TEXT */
+.gradient-text {
+    background: var(--hero-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

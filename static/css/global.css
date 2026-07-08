@@ -1,0 +1,129 @@
+﻿/* GLOBAL STYLES */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML */
+html {
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+    font-family: var(--font-family);
+    background: var(--background);
+    color: var(--text-primary);
+}
+
+/* STREAMLIT */
+.main {
+    background: var(--background);
+}
+
+.block-container {
+    max-width: 1450px;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+}
+
+section.main>div {
+    padding-top: 0rem;
+}
+
+/* HIDE STREAMLIT DEFAULTS */
+#MainMenu,
+footer,
+header {
+    visibility: hidden;
+}
+
+/* TYPOGRAPHY */
+h1 {
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-extrabold);
+    color: var(--text-primary);
+}
+
+h2 {
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-bold);
+    color: var(--text-primary);
+}
+
+h3 {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-semibold);
+    color: var(--text-primary);
+}
+
+h4 {
+    font-weight: var(--fw-semibold);
+}
+
+p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: var(--fs-md);
+}
+
+/* LINKS */
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* SVG */
+svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* HORIZONTAL RULE */
+hr {
+    border: none;
+    height: 1px;
+    background: var(--border);
+    margin: 2rem 0;
+}
+
+/* SELECTION */
+::selection {
+    background: var(--primary);
+    color: white;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #EDF2F7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
