@@ -38,10 +38,12 @@ section.main>div {
 }
 
 /* HIDE STREAMLIT DEFAULTS */
-#MainMenu,
-footer,
-header {
-    visibility: hidden;
+#MainMenu {
+    display: none;
+}
+
+footer {
+    display: none;
 }
 
 /* TYPOGRAPHY */
