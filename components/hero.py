@@ -3,7 +3,7 @@ from pathlib import Path
 import streamlit as st
 
 
-IMAGE_PATH = Path("static/images/bank.jpg")
+IMAGE_PATH = Path("static/images/hero-logo.png")
 
 
 def render(df) -> None:
@@ -43,12 +43,3 @@ def render(df) -> None:
                 str(IMAGE_PATH),
                 width="stretch",
             )
-
-        fraud_rate = (
-            df["is_fraud"].mean() * 100
-        )
-
-        st.markdown(
-            f'<div class="hero-card"><div class="hero-stat">{fraud_rate:.2f}</div><div class="hero-label">Fraud Rate</div></div>',
-            unsafe_allow_html=True,
-        )
