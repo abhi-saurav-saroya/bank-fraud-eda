@@ -1,26 +1,20 @@
 from pathlib import Path
 
 
-ICON_DIRECTORY = Path("../static/icons")
+ICON_DIR = Path("static/icons")
 
 
-def load_svg(filename: str, width: int = 24, height: int = 24, css_class: str = "") -> str:
+def get_svg(icon_name: str) -> str:
     """
-    Returns an inline SVG with custom size.
+    Returns SVG markup as a string.
+
+    Example:
+        get_svg("target")
     """
 
-    icon_path = ICON_DIRECTORY / filename
+    path = ICON_DIR / f"{icon_name}.svg"
 
-    if not icon_path.exists():
-        raise FileNotFoundError(
-            f"Icon not found: {filename}"
-        )
+    if not path.exists():
+        return ""
 
-    svg = icon_path.read_text(encoding="utf-8")
-
-    svg = svg.replace(
-        "<svg",
-        f'<svg class="{css_class}" width="{width}" height="{height}"'
-    )
-
-    return svg
+    return path.read_text(encoding="utf-8")
