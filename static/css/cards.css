@@ -45,11 +45,10 @@
 }
 
 .metric-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-12px);
     box-shadow: var(--shadow-xl);
 }
 
-/* METRIC ICON */
 .metric-icon {
     width: 60px;
     height: 60px;
@@ -65,6 +64,21 @@
     width: 30px;
     height: 30px;
     stroke: var(--primary);
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1.1;
+    margin-bottom: 0.35rem;
+}
+
+.metric-title {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    letter-spacing: 0.3px;
 }
 
 /* TECHNOLOGY CARD */
