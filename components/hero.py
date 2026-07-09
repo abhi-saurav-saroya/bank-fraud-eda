@@ -16,7 +16,7 @@ def render(df) -> None:
     with left:
 
         st.markdown(
-            '<div class="hero"><div class="hero-badge">🔒 Fraud Detection Dashboard</div><div class="hero-title">Bank Fraud Analytics Dashboard</div><div class="hero-subtitle">Explore fraud patterns, transaction behaviour,customer characteristics and business insights through interactive visualisations built with Streamlit and Plotly.</div></div>',
+            '<div class="hero"><div class="hero-title">Bank Fraud Analytics Dashboard</div><div class="hero-subtitle">Explore fraud patterns, transaction behaviour, customer characteristics and business insights through interactive visualisations built with Streamlit and Plotly.</div></div>',
             unsafe_allow_html=True,
         )
 
@@ -25,14 +25,15 @@ def render(df) -> None:
         with c1:
             st.button(
                 "📊 Explore Dataset",
-                use_container_width=True,
-                type="primary",
+                width="stretch",
+                type="primary"
             )
 
         with c2:
             st.button(
                 "💡 View Insights",
-                use_container_width=True,
+                width="stretch",
+                type="primary"
             )
 
     with right:
@@ -40,7 +41,7 @@ def render(df) -> None:
         if IMAGE_PATH.exists():
             st.image(
                 str(IMAGE_PATH),
-                use_container_width=True,
+                width="stretch",
             )
 
         fraud_rate = (
