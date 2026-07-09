@@ -17,7 +17,7 @@ from utils.data_loader import load_clean, load_raw
 from components.sidebar import render_sidebar
 
 # ---------- Pages ----------
-# from pages.home import render as render_home
+from pages.home import render as render_home
 # from pages.dataset import render as render_dataset
 # from pages.univariate import render as render_univariate
 # from pages.bivariate import render as render_bivariate
@@ -31,7 +31,7 @@ from components.sidebar import render_sidebar
 load_css()
 
 # LOAD DATA
-raw_df, clean_df = load_raw(), load_clean
+raw_df, clean_df = load_raw(), load_clean()
 
 
 # SIDEBAR
@@ -39,9 +39,8 @@ selected_page = render_sidebar()
 
 
 # ROUTING
-# if selected_page == "Home":
-
-#     render_home(clean_df)
+if selected_page == "Home":
+    render_home(clean_df)
 
 # elif selected_page == "Dataset":
 
