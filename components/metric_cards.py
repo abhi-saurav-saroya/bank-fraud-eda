@@ -1,5 +1,11 @@
 import streamlit as st
 
+from utils.icons import get_svg
+
+credit_card_icon = get_svg("credit-card")
+siren_icon = get_svg("siren")
+globe_icon = get_svg("earth")
+folder_icon = get_svg("folder-closed")
 
 def render(df):
     """
@@ -18,24 +24,24 @@ def render(df):
 
     with c1:
         st.markdown(
-            f'<div class="metric-card"> <div class="metric-icon"> 💳 </div> <div class="metric-value"> {total_transactions:,} </div> <div class="metric-title"> Total Transactions </div> </div>',
+            f'<div class="metric-card"> <div class="metric-icon"> {credit_card_icon} </div> <div class="metric-value"> {total_transactions:,} </div> <div class="metric-title"> Total Transactions </div> </div>',
             unsafe_allow_html=True,
         )
 
     with c2:
         st.markdown(
-            f'<div class="metric-card"> <div class="metric-icon"> 🚨 </div> <div class="metric-value"> {fraud_rate:.2f}% </div> <div class="metric-title"> Fraud Rate </div> </div>',
+            f'<div class="metric-card"> <div class="metric-icon"> {siren_icon} </div> <div class="metric-value"> {fraud_rate:.2f}% </div> <div class="metric-title"> Fraud Rate </div> </div>',
             unsafe_allow_html=True,
         )
 
     with c3:
         st.markdown(
-            f'<div class="metric-card"> <div class="metric-icon"> 🌍 </div> <div class="metric-value"> {international_transactions:,} </div> <div class="metric-title"> International Transactions </div> </div>',
+            f'<div class="metric-card"> <div class="metric-icon"> {globe_icon} </div> <div class="metric-value"> {international_transactions:,} </div> <div class="metric-title"> International Transactions </div> </div>',
             unsafe_allow_html=True,
         )
 
     with c4:
         st.markdown(
-            f'<div class="metric-card"> <div class="metric-icon"> 📂 </div> <div class="metric-value"> {total_features} </div> <div class="metric-title"> Features Count </div> </div>',
+            f'<div class="metric-card"> <div class="metric-icon"> {folder_icon} </div> <div class="metric-value"> {total_features} </div> <div class="metric-title"> Features Count </div> </div>',
             unsafe_allow_html=True,
         )
