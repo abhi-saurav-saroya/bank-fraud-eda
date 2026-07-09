@@ -186,3 +186,32 @@ button:disabled {
     cursor: not-allowed;
     transform: none;
 }
+
+
+/* Primary Button */
+.stButton > button {
+    width: 100%;
+    height: 52px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: #326be6;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.stButton > button:hover {
+    background: #1D4ED8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.stButton > button:active {
+    transform: scale(0.98);
+}
