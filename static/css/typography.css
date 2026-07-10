@@ -38,7 +38,7 @@
 /* SECTION SUBTITLE */
 .section-subtitle {
     font-size: 1rem;
-    color: var(--text-secondary);
+    color: var(--text-section-subtitle);
     margin-bottom: 2rem;
     line-height: 1.8;
 }
