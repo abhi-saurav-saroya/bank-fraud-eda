@@ -1,7 +1,7 @@
 import streamlit as st
 
 from components.hero import render as render_hero
-from components.metric_cards import render as render_metric_cards
+from components.home_metric_cards import render as render_home_metric_cards
 from components.overview import render as render_overview
 from components.tech_stack import render as render_tech_stack
 
@@ -12,7 +12,7 @@ def render(df):
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-    render_metric_cards(df)
+    render_home_metric_cards(df)
 
     st.markdown("<br><br>", unsafe_allow_html=True)
 
