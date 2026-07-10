@@ -2,6 +2,8 @@ import streamlit as st
 
 from utils.icons import get_svg
 
+from components.metric_card import render as render_metric_card
+
 paper_icon = get_svg("notepad-text")
 puzzle_icon = get_svg("puzzle")
 memory_icon = get_svg("card-sim")
@@ -41,27 +43,31 @@ def render(raw_df, df):
     c1, c2, c3, c4 = st.columns(4)
 
     with c1:
-        st.markdown(
-            f'<div class="metric-card"> <div class="metric-icon"> {paper_icon} </div> <div class="metric-value"> {raw_rows:,} </div> <div class="metric-label"> Total Records </div> </div>',
-            unsafe_allow_html=True,
+        render_metric_card(
+            icon=paper_icon,
+            value=raw_rows,
+            label="Total Records"
         )
 
     with c2:
-        st.markdown(
-            f'<div class="metric-card"> <div class="metric-icon"> {puzzle_icon} </div> <div class="metric-value"> {raw_columns} </div> <div class="metric-label"> Total Features </div> </div>',
-            unsafe_allow_html=True,
+        render_metric_card(
+            icon=puzzle_icon,
+            value=raw_columns,
+            label="Total Features"
         )
 
     with c3:
-        st.markdown(
-            f'<div class="metric-card"> <div class="metric-icon"> {memory_icon} </div> <div class="metric-value"> {raw_memory:.2f} MB </div> <div class="metric-label"> Memory Usage </div> </div>',
-            unsafe_allow_html=True,
+        render_metric_card(
+            icon=memory_icon,
+            value=f"{raw_memory:.2f} MB",
+            label="Memory Usage"
         )
 
     with c4:
-        st.markdown(
-            f'<div class="metric-card"> <div class="metric-icon"> {null_icon} </div> <div class="metric-value"> {raw_null_count} </div> <div class="metric-label"> Null Values </div> </div>',
-            unsafe_allow_html=True,
+        render_metric_card(
+            icon=null_icon,
+            value=raw_null_count,
+            label="Null Values"
         )
 
 
@@ -78,25 +84,29 @@ def render(raw_df, df):
     c1, c2, c3, c4 = st.columns(4)
 
     with c1:
-        st.markdown(
-            f'<div class="metric-card"> <div class="metric-icon"> {paper_icon} </div> <div class="metric-value"> {rows:,} </div> <div class="metric-label"> Total Records </div> </div>',
-            unsafe_allow_html=True,
+        render_metric_card(
+            icon=paper_icon,
+            value=rows,
+            label="Total Records"
         )
 
     with c2:
-        st.markdown(
-            f'<div class="metric-card"> <div class="metric-icon"> {puzzle_icon} </div> <div class="metric-value"> {columns} </div> <div class="metric-label"> Total Features </div> </div>',
-            unsafe_allow_html=True,
+        render_metric_card(
+            icon=puzzle_icon,
+            value=columns,
+            label="Total Features"
         )
 
     with c3:
-        st.markdown(
-            f'<div class="metric-card"> <div class="metric-icon"> {memory_icon} </div> <div class="metric-value"> {memory:.2f} MB </div> <div class="metric-label"> Memory Usage </div> </div>',
-            unsafe_allow_html=True,
+        render_metric_card(
+            icon=memory_icon,
+            value=f"{memory:.2f} MB",
+            label="Memory Usage"
         )
 
     with c4:
-        st.markdown(
-            f'<div class="metric-card"> <div class="metric-icon"> {null_icon} </div> <div class="metric-value"> {null_count} </div> <div class="metric-label"> Null Values </div> </div>',
-            unsafe_allow_html=True,
+        render_metric_card(
+            icon=null_icon,
+            value=null_count,
+            label="Null Values"
         )
