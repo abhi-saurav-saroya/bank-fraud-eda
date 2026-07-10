@@ -18,7 +18,7 @@ from components.sidebar import render_sidebar
 
 # ---------- Pages ----------
 from pages.home import render as render_home
-# from pages.dataset import render as render_dataset
+from pages.dataset import render as render_dataset
 # from pages.univariate import render as render_univariate
 # from pages.bivariate import render as render_bivariate
 # from pages.multivariate import render as render_multivariate
@@ -42,9 +42,8 @@ selected_page = render_sidebar()
 if selected_page == "Home":
     render_home(clean_df)
 
-# elif selected_page == "Dataset":
-
-#     render_dataset(raw_df, clean_df)
+elif selected_page == "Dataset":
+    render_dataset(raw_df, clean_df)
 
 # elif selected_page == "Univariate Analysis":
 
