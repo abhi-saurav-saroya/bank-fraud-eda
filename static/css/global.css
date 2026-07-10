@@ -92,12 +92,6 @@ img {
     display: block;
 }
 
-/* SVG */
-svg {
-    width: 24px;
-    height: 24px;
-}
-
 /* HORIZONTAL RULE */
 hr {
     border: none;
