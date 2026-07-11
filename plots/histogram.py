@@ -18,10 +18,14 @@ def create(df, column, bins=30):
     fig.update_traces(
         hovertemplate="<b>%{x}</b><br>Count: %{y}<extra></extra>",
         marker_line_width=0.5,
+        hoverlabel=dict(
+            bgcolor="white",
+            font=dict(color="#000000")
+        )
     )
 
     fig.update_layout(
-        title=f"Distribution of {column}",
+        title=f"Distribution of {column.replace('_', ' ').title()}",
         bargap=0.05,
     )
 

@@ -28,10 +28,14 @@ def create(df, column):
         textposition="inside",
         textinfo="percent+label",
         hovertemplate="<b>%{label}</b><br>%{percent}<br>Count: %{value}<extra></extra>",
+        hoverlabel=dict(
+            bgcolor="white",
+            font=dict(color="#000000")
+        )
     )
 
     fig.update_layout(
-        title=f"{column} Distribution",
+        title=f"{column.replace('_', ' ').title()} Distribution",
     )
 
     return apply_theme(fig)

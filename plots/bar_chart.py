@@ -29,10 +29,14 @@ def create(df, column, top_n=None):
 
     fig.update_traces(
         hovertemplate="<b>%{x}</b><br>Count: %{y}<extra></extra>",
+        hoverlabel=dict(
+            bgcolor="white",
+            font=dict(color="#000000")
+        )
     )
 
     fig.update_layout(
-        title=f"{column} Frequency",
+        title=f"{column.replace('_', ' ').title()} Frequency",
         showlegend=False,
     )
 

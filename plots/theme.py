@@ -19,13 +19,15 @@ BORDER = "#CBD5E1"
 
 COLORS = [
     "#2563EB",
-    "#3B82F6",
-    "#60A5FA",
-    "#93C5FD",
-    "#BFDBFE",
+    "#DD3BF6",
+    "#CDC337",
+    "#00FF08",
+    "#BC1986",
     "#10B981",
     "#F59E0B",
     "#EF4444",
+    "#1A494A",
+    "#D66695"
 ]
 
 
@@ -35,7 +37,6 @@ def apply_theme(fig: go.Figure) -> go.Figure:
     """
 
     fig.update_layout(
-
         template="plotly_white",
 
         paper_bgcolor=BACKGROUND,
@@ -67,15 +68,6 @@ def apply_theme(fig: go.Figure) -> go.Figure:
             bgcolor="white",
             font_size=13,
             font_family="Inter",
-        ),
-
-        legend=dict(
-            orientation="h",
-            yanchor="bottom",
-            y=1.02,
-            xanchor="right",
-            x=1,
-            bgcolor="rgba(0,0,0,0)",
         ),
 
         transition=dict(

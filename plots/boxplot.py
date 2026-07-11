@@ -17,10 +17,14 @@ def create(df, column):
 
     fig.update_traces(
         hovertemplate="<b>%{y}</b><extra></extra>",
+        hoverlabel=dict(
+            bgcolor="white",
+            font=dict(color="#000000")
+        )
     )
 
     fig.update_layout(
-        title=f"Box Plot of {column}",
+        title=f"Box Plot of {column.replace('_', ' ').title()}",
     )
 
     return apply_theme(fig)
