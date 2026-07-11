@@ -10,9 +10,17 @@ def create(df, column, top_n=None):
 
     counts = (
         df[column]
+        .astype(str)
         .value_counts()
         .reset_index()
     )
+
+    try:
+        counts[column] = counts[column].astype(int)
+        counts = counts.sort_values(column)
+        counts[column] = counts[column].astype(str)
+    except ValueError:
+        pass
 
     counts.columns = [column, "Count"]
 
