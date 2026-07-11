@@ -36,7 +36,7 @@ def render(df, feature_type, feature):
             )
 
 
-    elif feature_type == "Categorical" or feature_type == "Binary":
+    elif feature_type in ["Categorical", "Discrete Numerical", "Binary"]:
         bar = create_bar_chart(df=df, column=feature)
         pie = create_pie_chart(df=df, column=feature)
 

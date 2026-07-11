@@ -25,6 +25,7 @@ def render(df) -> tuple:
                 "Numerical",
                 "Categorical",
                 "Binary",
+                "Discrete Numerical"
             ],
             horizontal=False,
         )

@@ -67,7 +67,7 @@ def render(df, feature_type, feature):
             )
 
     
-    elif feature_type == "Categorical":
+    elif feature_type == "Categorical" or feature_type == "Discrete Numerical":
         unique = series.nunique()
         mode = series.mode().iloc[0] if not series.mode().empty else "-"
         least = (
