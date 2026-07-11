@@ -7,6 +7,11 @@ EXCLUDED_COLUMNS = {
     "transaction_datetime"
 }
 
+DISCRETE_NUMERIC_COLUMNS = {
+    "hour_of_day",
+    "failed_attempts",
+}
+
 
 def get_binary_columns(df: pd.DataFrame) -> list[str]:
     """
@@ -45,6 +50,7 @@ def get_numeric_columns(df: pd.DataFrame) -> list[str]:
             for col in numeric
             if col not in binary
             and col not in EXCLUDED_COLUMNS
+            and col not in DISCRETE_NUMERIC_COLUMNS
         ]
     )
 
@@ -101,4 +107,5 @@ def get_feature_groups(df: pd.DataFrame) -> dict:
         "Categorical": get_categorical_columns(df),
         "Binary": get_binary_columns(df),
         "Datetime": get_datetime_columns(df),
+        "Discrete Numerical": DISCRETE_NUMERIC_COLUMNS 
     }
