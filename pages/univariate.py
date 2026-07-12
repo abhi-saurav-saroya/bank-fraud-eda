@@ -1,10 +1,10 @@
 import streamlit as st
 
 # Components
-from components.univariate_header import render as render_header
-from components.feature_selector import render as render_feature_selector
-from components.univariate_summary_cards import render as render_summary_cards
-from components.univariate_distribution_section import render as render_distribution_section
+from components.univariate.univariate_header import render as render_header
+from components.univariate.feature_selector import render as render_feature_selector
+from components.univariate.univariate_summary_cards import render as render_summary_cards
+from components.univariate.univariate_distribution_section import render as render_distribution_section
 # from components.statistics_table import render as render_statistics_table
 # from components.insight_panel import render as render_insight_panel
 
