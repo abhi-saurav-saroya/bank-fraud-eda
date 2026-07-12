@@ -4,6 +4,7 @@ from utils.feature_config import (
     get_binary_columns,
     get_categorical_columns,
     get_numeric_columns,
+    DISCRETE_NUMERIC_COLUMNS
 )
 
 
@@ -20,6 +21,7 @@ def render(df) -> tuple:
     numeric = get_numeric_columns(df)
     categorical = get_categorical_columns(df)
     binary = get_binary_columns(df)
+    discrete = list(DISCRETE_NUMERIC_COLUMNS)
 
     feature_types = {}
 
@@ -32,11 +34,10 @@ def render(df) -> tuple:
     for col in binary:
         feature_types[col] = "Binary"
 
-    all_features = (
-        numeric
-        + categorical
-        + binary
-    )
+    for col in discrete:
+        feature_types[col] = "Discrete Numerical"
+
+    all_features = numeric + categorical + binary + discrete
 
     col1, col2 = st.columns(2)
 
