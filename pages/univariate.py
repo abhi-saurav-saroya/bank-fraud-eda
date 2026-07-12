@@ -1,11 +1,9 @@
 import streamlit as st
 
-# Components
-from components.univariate.univariate_header import render as render_header
+from components.univariate.header import render as render_header
 from components.univariate.feature_selector import render as render_feature_selector
-from components.univariate.univariate_summary_cards import render as render_summary_cards
-from components.univariate.univariate_distribution_section import render as render_distribution_section
-# from components.statistics_table import render as render_statistics_table
+from components.univariate.summary_cards import render as render_summary_cards
+from components.univariate.distribution_section import render as render_distribution_section
 # from components.insight_panel import render as render_insight_panel
 
 
@@ -23,15 +21,5 @@ def render(df):
     render_summary_cards(df, feature_type, feature)
 
     render_distribution_section(df, feature_type, feature)
-
-    # --------------------------------------------------
-    # Statistics Table
-    # --------------------------------------------------
-
-    # render_statistics_table(df, feature)
-
-    # --------------------------------------------------
-    # Insight Panel
-    # --------------------------------------------------
 
     # render_insight_panel(df, feature)
