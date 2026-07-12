@@ -4,7 +4,7 @@ from components.univariate.header import render as render_header
 from components.univariate.feature_selector import render as render_feature_selector
 from components.univariate.summary_cards import render as render_summary_cards
 from components.univariate.distribution_section import render as render_distribution_section
-# from components.insight_panel import render as render_insight_panel
+from components.univariate.insight_panel import render as render_insight_panel
 
 
 def render(df):
@@ -22,4 +22,4 @@ def render(df):
 
     render_distribution_section(df, feature_type, feature)
 
-    # render_insight_panel(df, feature)
+    render_insight_panel(df, feature_type, feature)
