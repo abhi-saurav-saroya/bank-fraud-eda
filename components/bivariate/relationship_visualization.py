@@ -48,7 +48,6 @@ def render(df, x_feature, y_feature, x_type, y_type):
             df=df,
             x=x_feature,
             y=y_feature,
-            column=1
         )
 
         st.plotly_chart(
