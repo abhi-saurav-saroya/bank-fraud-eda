@@ -20,7 +20,7 @@ from components.sidebar import render_sidebar
 from pages.home import render as render_home
 from pages.dataset import render as render_dataset
 from pages.univariate import render as render_univariate
-# from pages.bivariate import render as render_bivariate
+from pages.bivariate import render as render_bivariate
 # from pages.multivariate import render as render_multivariate
 # from pages.recommendations import render as render_recommendations
 # from pages.future_scope import render as render_future_scope
@@ -48,9 +48,8 @@ elif selected_page == "Dataset":
 elif selected_page == "Univariate Analysis":
     render_univariate(clean_df)
 
-# elif selected_page == "Bivariate Analysis":
-
-#     render_bivariate(clean_df)
+elif selected_page == "Bivariate Analysis":
+    render_bivariate(clean_df)
 
 # elif selected_page == "Multivariate Analysis":
 
