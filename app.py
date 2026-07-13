@@ -21,7 +21,7 @@ from pages.home import render as render_home
 from pages.dataset import render as render_dataset
 from pages.univariate import render as render_univariate
 from pages.bivariate import render as render_bivariate
-# from pages.multivariate import render as render_multivariate
+from pages.multivariate import render as render_multivariate
 # from pages.recommendations import render as render_recommendations
 # from pages.future_scope import render as render_future_scope
 
@@ -51,9 +51,8 @@ elif selected_page == "Univariate Analysis":
 elif selected_page == "Bivariate Analysis":
     render_bivariate(clean_df)
 
-# elif selected_page == "Multivariate Analysis":
-
-#     render_multivariate(clean_df)
+elif selected_page == "Multivariate Analysis":
+    render_multivariate(clean_df)
 
 # elif selected_page == "Recommendations":
 
