@@ -1,6 +1,6 @@
 import plotly.graph_objects as go
 
-from plots.theme import PRIMARY, SECONDARY, apply_theme
+from plots.theme import PRIMARY, PRIMARY_LIGHT, apply_theme
 
 
 def create(df, features, target="is_fraud"):
@@ -36,7 +36,7 @@ def create(df, features, target="is_fraud"):
             theta=features,
             fill="toself",
             name="Fraud",
-            line=dict(color=SECONDARY),
+            line=dict(color=PRIMARY_LIGHT),
         )
     )
 
