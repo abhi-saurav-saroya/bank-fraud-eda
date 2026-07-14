@@ -17,11 +17,11 @@ from utils.data_loader import load_clean, load_raw
 from components.sidebar import render_sidebar
 
 # ---------- Pages ----------
-from pages.home import render as render_home
-from pages.dataset import render as render_dataset
-from pages.univariate import render as render_univariate
-from pages.bivariate import render as render_bivariate
-from pages.multivariate import render as render_multivariate
+from routes.home import render as render_home
+from routes.dataset import render as render_dataset
+from routes.univariate import render as render_univariate
+from routes.bivariate import render as render_bivariate
+from routes.multivariate import render as render_multivariate
 # from pages.recommendations import render as render_recommendations
 # from pages.future_scope import render as render_future_scope
 
