@@ -107,5 +107,5 @@ def get_feature_groups(df: pd.DataFrame) -> dict:
         "Categorical": get_categorical_columns(df),
         "Binary": get_binary_columns(df),
         "Datetime": get_datetime_columns(df),
-        "Discrete Numerical": DISCRETE_NUMERIC_COLUMNS 
+        "Discrete Numerical": list(DISCRETE_NUMERIC_COLUMNS) 
     }
