@@ -1,10 +1,3 @@
-"""
-==========================================================
-Sidebar Component
-Bank Fraud Analytics Dashboard
-==========================================================
-"""
-
 import streamlit as st
 
 
@@ -14,7 +7,8 @@ PAGES = [
     "📊 Univariate Analysis",
     "📈 Bivariate Analysis",
     "🔍 Multivariate Analysis",
-    "💡 Recommendations",
+    "💡 Final Insights",
+    "🔐 Security Recommendations",
     "🚀 Future Scope",
 ]
 
@@ -22,11 +16,6 @@ PAGES = [
 def render_sidebar() -> str:
     """
     Render the application sidebar.
-
-    Returns
-    -------
-    str
-        Name of the selected page.
     """
 
     with st.sidebar:
