@@ -17,7 +17,7 @@ def render() -> None:
 
     with left:
         st.markdown(
-            f'<div class="hero"> <div class="hero-badge"> {result_icon}  Final Results </div> <div class="hero-title"> Final Insights </div> <div class="hero-subtitle"> Explore the most significant findings uncovered during the exploratory data analysis. This section highlights the strongest fraud indicators, customer behaviour patterns and business observations supported by the analyses performed throughout the dashboard, providing a concise summary of the most actionable insights. </div> </div>',
+            f'<div class="hero"> <div class="hero-badge"> {result_icon}  Key Findings </div> <div class="hero-title"> Final Insights </div> <div class="hero-subtitle"> Explore the most significant findings uncovered during the exploratory data analysis. This section highlights the strongest fraud indicators, customer behaviour patterns and business observations supported by the analyses performed throughout the dashboard, providing a concise summary of the most actionable insights. </div> </div>',
             unsafe_allow_html=True,
         )
 
