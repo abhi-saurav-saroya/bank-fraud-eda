@@ -1,6 +1,5 @@
 import streamlit as st
 
-# PAGE CONFIG
 st.set_page_config(
     page_title="Bank Fraud Analytics Dashboard",
     page_icon="🏦",
@@ -9,37 +8,29 @@ st.set_page_config(
 )
 
 
-# ---------- Utilities ----------
 from utils.css_loader import load_css
 from utils.data_loader import load_clean, load_raw
 
-# ---------- Components ----------
 from components.sidebar import render_sidebar
 
-# ---------- Pages ----------
 from routes.home import render as render_home
 from routes.dataset import render as render_dataset
 from routes.univariate import render as render_univariate
 from routes.bivariate import render as render_bivariate
 from routes.multivariate import render as render_multivariate
 from routes.final_insights import render as render_final_insights
-# from pages.recommendations import render as render_recommendations
-# from pages.future_scope import render as render_future_scope
+# from routes.security_recommendations import render as render_recommendations
+# from routes.future_scope import render as render_future_scope
 
 
 
-# LOAD CSS
 load_css()
-
-# LOAD DATA
 raw_df, clean_df = load_raw(), load_clean()
 
 
-# SIDEBAR
 selected_page = render_sidebar()
 
 
-# ROUTING
 if selected_page == "Home":
     render_home(clean_df)
 
@@ -59,9 +50,7 @@ elif selected_page == "Final Insights":
     render_final_insights(clean_df)
 
 # elif selected_page == "Recommendations":
-
 #     render_recommendations(clean_df)
 
 # elif selected_page == "Future Scope":
-
 #     render_future_scope()
