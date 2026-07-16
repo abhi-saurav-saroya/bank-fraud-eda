@@ -4,6 +4,7 @@ from components.final_insights.header import render as render_header
 from components.final_insights.correlation_with_fraud import render as render_correlation_with_fraud
 from components.final_insights.failed_attempts_insight import render as render_failed_attempts_insight
 from components.final_insights.hourly_fraud_insight import render as render_hourly_fraud_insight
+from components.final_insights.international_transactions_insight import render as render_international_transactions_insight
 
 def render(df) -> None:
     """
@@ -14,13 +15,22 @@ def render(df) -> None:
 
     st.divider()
 
-    t1, t2, t3 = st.tabs(["Correlation with Fraud", "Fraud Rate by Failed Attempts", "Fraud Rate by Hour of Day"])
+    tabs = st.tabs(
+        [
+            "📊 Correlation",
+            "🔐 Failed Attempts",
+            "🕒 Hourly Fraud",
+            "🌍 International",
+        ]
+    )
 
-    with t1:
-        render_correlation_with_fraud(df)
+    renderers = [
+        render_correlation_with_fraud,
+        render_failed_attempts_insight,
+        render_hourly_fraud_insight,
+        render_international_transactions_insight,
+    ]
 
-    with t2:
-        render_failed_attempts_insight(df)
-
-    with t3:
-        render_hourly_fraud_insight(df)
+    for tab, renderer in zip(tabs, renderers):
+        with tab:
+            renderer(df)
