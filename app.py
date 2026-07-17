@@ -19,7 +19,7 @@ from routes.univariate import render as render_univariate
 from routes.bivariate import render as render_bivariate
 from routes.multivariate import render as render_multivariate
 from routes.final_insights import render as render_final_insights
-# from routes.security_recommendations import render as render_recommendations
+from routes.security_recommendations import render as render_security_recommendations
 # from routes.future_scope import render as render_future_scope
 
 
@@ -49,8 +49,8 @@ elif selected_page == "Multivariate Analysis":
 elif selected_page == "Final Insights":
     render_final_insights(clean_df)
 
-# elif selected_page == "Recommendations":
-#     render_recommendations(clean_df)
+elif selected_page == "Security Recommendations":
+    render_security_recommendations(clean_df)
 
 # elif selected_page == "Future Scope":
 #     render_future_scope()
