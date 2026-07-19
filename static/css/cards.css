@@ -157,11 +157,119 @@
 
 /* RECOMMENDATION CARD */
 .recommendation-card {
-    background: #F8FBFF;
-    border-left: 6px solid var(--success);
-    border-radius: var(--radius-md);
-    padding: 1.8rem;
-    box-shadow: var(--shadow-sm);
+    background: linear-gradient(135deg, #ffffff, #f8fbff);
+    border: 1px solid #dbeafe;
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 2rem;
+    transition: all var(--transition-normal);
+}
+
+.recommendation-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.recommendation-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.recommendation-icon svg {
+    width: 56px;
+    height: 56px;
+    color: var(--primary);
+}
+
+.recommendation-title {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1e293b !important;
+}
+
+.recommendation-priority {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    padding: .45rem 1rem;
+    border-radius: 999px;
+    font-size: .9rem;
+    font-weight: 700;
+    margin-top: .75rem;
+}
+
+.recommendation-priority.high {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.recommendation-priority.medium {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.recommendation-priority.low {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.recommendation-section-title {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1.6rem;
+    margin-bottom: .8rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0f172a !important;
+}
+
+.recommendation-section-title svg {
+    width: 20px;
+    height: 20px;
+    color: var(--primary);
+}
+
+.recommendation-text {
+    color: #475569;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: .8rem;
+}
+
+.recommendation-list {
+    margin: 0;
+    padding-left: 1.3rem;
+    list-style: none;
+}
+
+.recommendation-list li {
+    color: #475569;
+    line-height: 1.8;
+    margin-bottom: .65rem;
+}
+
+.recommendation-list li svg {
+    width: 16px;
+    height: 16px;
+    color: #16a34a;
+    margin-right: .35rem;
+}
+
+.two-column{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1.5rem;
+}
+
+@media(max-width:768px){
+    .two-column{
+        grid-template-columns:1fr;
+    }
 }
 
 /* WARNING CARD */
