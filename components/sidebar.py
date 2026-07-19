@@ -8,8 +8,7 @@ PAGES = [
     "📈 Bivariate Analysis",
     "🔍 Multivariate Analysis",
     "💡 Final Insights",
-    "🔐 Security Recommendations",
-    "🚀 Future Scope",
+    "🔐 Security Recommendations"
 ]
 
 
