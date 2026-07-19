@@ -50,7 +50,7 @@ elif selected_page == "Final Insights":
     render_final_insights(clean_df)
 
 elif selected_page == "Security Recommendations":
-    render_security_recommendations(clean_df)
+    render_security_recommendations()
 
 # elif selected_page == "Future Scope":
 #     render_future_scope()
