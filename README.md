@@ -158,3 +158,115 @@ The project follows a modular architecture where each dashboard page, reusable c
 | Version Control | Git & GitHub |
 
 </div>
+
+# Exploratory Data Analysis Workflow
+
+The project follows a structured exploratory data analysis pipeline to transform raw transaction records into meaningful business insights.
+
+### 1. Data Collection
+
+- Import banking transaction dataset
+- Validate data integrity
+- Inspect dataset dimensions
+- Review feature descriptions
+
+### 2. Data Cleaning
+
+- Handle missing values
+- Remove unnecessary columns
+- Correct data types
+- Prepare features for analysis
+
+### 3. Feature Exploration
+
+- Numerical feature analysis
+- Categorical feature analysis
+- Binary feature analysis
+- Statistical summaries
+
+### 4. Univariate Analysis
+
+Study each feature independently using descriptive statistics and visualizations.
+
+### 5. Bivariate Analysis
+
+Analyze relationships between pairs of variables to uncover potential fraud patterns.
+
+### 6. Multivariate Analysis
+
+Compare multiple features simultaneously against the fraud target variable to identify combined behavioural trends.
+
+### 7. Insight Generation
+
+Extract meaningful observations from the exploratory analysis.
+
+### 8. Security Recommendations
+
+Translate analytical findings into practical fraud prevention strategies.
+
+
+# Project Workflow
+
+<p align="center">
+  <img src="assets/workflow/project-workflow.png" width="650" alt="Project Workflow">
+</p>
+
+The dashboard follows a modular workflow where each stage builds upon the previous one, gradually transforming raw transactional data into actionable fraud intelligence.
+
+# Installation & Setup
+
+### Prerequisites
+
+Before running the project, ensure you have:
+- Python 3.10 or later
+- Git
+- pip
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/abhi-saurav-saroya/bank-fraud-eda.git
+cd bank-fraud-eda
+```
+
+### Create a Virtual Environment (Recommended)
+
+#### Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+#### Linux / macOS
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the Dashboard
+
+```bash
+streamlit run app.py
+```
+
+The application will automatically open in your default web browser.
+
+# Usage
+
+After launching the dashboard:
+
+1. Open the **Home** page to understand the project overview.
+2. Explore the **Dataset** page to inspect the available features.
+3. Perform **Univariate Analysis** to study individual feature distributions.
+4. Use **Bivariate Analysis** to identify relationships between variables.
+5. Compare multiple fraud indicators in the **Multivariate Analysis** page.
+6. Review the **Final Insights** section for the most significant findings.
+7. Explore **Security Recommendations** to understand how the analytical insights can improve fraud prevention systems.
