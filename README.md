@@ -97,12 +97,9 @@ The dashboard provides an intuitive interface for navigating through multiple le
   <img src="assets/project-structure/directory-structure.png" width="550" alt="Directory Structure">
 </p>
 
-The project follows a modular architecture where each dashboard page, reusable component, visualization, utility, and styling module is organized independently. This structure improves readability, maintainability, and scalability while encouraging component reuse throughout the application.
-
 # Dashboard Screenshots
 
 ### 🏠 Home Page
-
 <p align="center">
   <img src="assets/screenshots/home.png" width="700" alt="Home Page">
 </p>
@@ -158,52 +155,6 @@ The project follows a modular architecture where each dashboard page, reusable c
 | Version Control | Git & GitHub |
 
 </div>
-
-# Exploratory Data Analysis Workflow
-
-The project follows a structured exploratory data analysis pipeline to transform raw transaction records into meaningful business insights.
-
-### 1. Data Collection
-
-- Import banking transaction dataset
-- Validate data integrity
-- Inspect dataset dimensions
-- Review feature descriptions
-
-### 2. Data Cleaning
-
-- Handle missing values
-- Remove unnecessary columns
-- Correct data types
-- Prepare features for analysis
-
-### 3. Feature Exploration
-
-- Numerical feature analysis
-- Categorical feature analysis
-- Binary feature analysis
-- Statistical summaries
-
-### 4. Univariate Analysis
-
-Study each feature independently using descriptive statistics and visualizations.
-
-### 5. Bivariate Analysis
-
-Analyze relationships between pairs of variables to uncover potential fraud patterns.
-
-### 6. Multivariate Analysis
-
-Compare multiple features simultaneously against the fraud target variable to identify combined behavioural trends.
-
-### 7. Insight Generation
-
-Extract meaningful observations from the exploratory analysis.
-
-### 8. Security Recommendations
-
-Translate analytical findings into practical fraud prevention strategies.
-
 
 # Project Workflow
 
