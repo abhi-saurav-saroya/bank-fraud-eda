@@ -270,3 +270,96 @@ After launching the dashboard:
 5. Compare multiple fraud indicators in the **Multivariate Analysis** page.
 6. Review the **Final Insights** section for the most significant findings.
 7. Explore **Security Recommendations** to understand how the analytical insights can improve fraud prevention systems.
+
+
+# Key Findings
+
+The exploratory analysis uncovered several significant fraud patterns, behavioural trends, and business insights from the banking transaction dataset.
+
+📄 **Read Page 32 of the [Project Report](https://github.com/abhi-saurav-saroya/bank-fraud-eda/blob/main/docs/report/bank-fraud-eda-project.pdf) for a detailed discussion of the key findings.**
+
+# Security Recommendations
+
+Based on the insights obtained during the exploratory data analysis, a set of evidence-based security recommendations has been proposed to strengthen fraud detection and enhance transaction security.
+
+📄 **Refer to Pages 32–33 of the [Project Report](https://github.com/abhi-saurav-saroya/bank-fraud-eda/blob/main/docs/report/bank-fraud-eda-project.pdf) for the complete recommendations and their supporting analysis.**
+
+# Future Scope
+
+Several opportunities exist to extend this project with advanced analytics and intelligent fraud detection capabilities.
+
+📄 **Refer to Page 33 of the [Project Report](https://github.com/abhi-saurav-saroya/bank-fraud-eda/blob/main/docs/report/bank-fraud-eda-project.pdf) for the proposed future enhancements.**
+
+# Learning Outcomes
+
+This project provided valuable practical experience in:
+
+- Exploratory Data Analysis (EDA)
+- Data Visualization
+- Statistical Analysis
+- Interactive Dashboard Development
+- Streamlit Application Development
+- Plotly Interactive Visualizations
+- Python Programming
+- Modular Software Architecture
+- UI Design for Analytical Applications
+- Business Insight Generation
+- Fraud Pattern Identification
+- Git & GitHub Workflow
+- Data Storytelling
+- Writing Evidence-Based Security Recommendations
+
+# Acknowledgements
+
+### Kaggle
+
+- Banking Fraud Detection Dataset
+- Used as the primary data source for this project.
+
+### Streamlit
+
+- Used for developing the interactive dashboard.
+- https://streamlit.io/
+
+### Plotly
+
+- Used for creating interactive visualizations.
+- https://plotly.com/python/
+
+### Pandas
+
+- Used for data manipulation and analysis.
+- https://pandas.pydata.org/
+
+### NumPy
+
+- Used for efficient numerical computation.
+- https://numpy.org/
+
+### Matplotlib
+
+- Used during the exploratory analysis phase.
+- https://matplotlib.org/
+
+### Seaborn
+
+- Used for statistical data visualization during notebook-based analysis.
+- https://seaborn.pydata.org/
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0EA5E9&height=110&section=footer" alt="Footer"/>
+
+### 📊 Transforming Transaction Data into Actionable Fraud Intelligence
+
+*Every transaction tells a story. Every insight strengthens security.*
+
+---
+
+**⭐ If you found this project interesting, consider giving it a star!**
+
+---
+
+**© 2026 Open Source Project | Bank Fraud Exploratory Data Analysis Dashboard | Apache-2.0 License**
+
+</div>
