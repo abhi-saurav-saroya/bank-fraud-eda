@@ -211,8 +211,6 @@ Translate analytical findings into practical fraud prevention strategies.
   <img src="assets/workflow/project-workflow.png" width="650" alt="Project Workflow">
 </p>
 
-The dashboard follows a modular workflow where each stage builds upon the previous one, gradually transforming raw transactional data into actionable fraud intelligence.
-
 # Installation & Setup
 
 ### Prerequisites
